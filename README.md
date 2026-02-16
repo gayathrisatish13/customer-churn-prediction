@@ -1,111 +1,49 @@
-#Customer Churn Prediction
+# Customer Churn Prediction
 
-End-to-end customer churn prediction project using Python and machine learning, including data cleaning, EDA, feature engineering, model training, and performance evaluation.
-📌 Project Overview
+This project analyzes customer churn data from a telecom company and builds machine learning models to predict whether a customer will churn (leave the service).
 
-This project focuses on analyzing customer churn data to identify patterns and build a machine learning model that predicts whether a customer is likely to leave the company.
+## Overview
 
-The goal is to help businesses reduce customer attrition by identifying high-risk customers early.
+The goal is to identify patterns and key features that influence churn, and to train classification models that can predict churn outcomes with reasonable accuracy.
 
-📊 Dataset
+## Dataset
 
-Dataset: Telco Customer Churn
+- Telco Customer Churn dataset (Excel)
+- Features include customer demographics, account details, services, and churn label.
 
-Format: Excel (.xlsx)
+## Project Workflow
 
-Features include:
-
-Customer demographics
-
-Account information
-
-Service details
-
-Monthly and total charges
-
-Churn label (Target variable)
-
-🔍 Project Workflow
-1. Data Cleaning
-
-Handling missing values
-
-Correcting data types
-
-Converting categorical variables
-
-Removing inconsistencies
-
+1. Data cleaning and preprocessing
 2. Exploratory Data Analysis (EDA)
+3. Feature encoding
+4. Model training and evaluation
+5. Interpretation of results
 
-Churn distribution analysis
+## Technologies Used
 
-Correlation analysis
+- Python
+- Pandas
+- NumPy
+- Seaborn / Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
-Visualization of key features affecting churn
+## How to Use
 
-Feature-wise churn comparison
-
-3. Data Preprocessing
-
-Encoding categorical variables
-
-Feature scaling (if applied)
-
-Train-test split
-
-4. Model Building
-
-Applied classification algorithms such as:
-
-Logistic Regression
-
-Decision Tree
-
-Random Forest (if used)
-
-Model comparison based on performance metrics
-
-5. Model Evaluation
-
-Accuracy score
-
-Confusion matrix
-
-Precision, Recall, F1-score
-
-ROC-AUC (if implemented)
-
-🛠️ Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-Scikit-learn
-
-Jupyter Notebook
-
-📈 Results
-
-Built a predictive model to classify churn vs non-churn customers.
-
-Identified key factors influencing churn (e.g., contract type, monthly charges, tenure).
-
-Evaluated model performance using classification metrics.
+1. Clone the repo
+git clone https://github.com/gayathrisatish13/customer-churn-prediction.git
 
 
-📌 Key Learnings
+2. Activate environment:
+pip install -r requirements.txt
 
-Importance of data preprocessing in ML projects
 
-Handling imbalanced classification problems
+3. Open the notebook:
+jupyter notebook churn_analysis.ipynb
 
-Model evaluation beyond accuracy
 
-Business interpretation of ML results
+## Future Improvements
 
+- Add hyperparameter tuning
+- Use cross-validation
+- Deploy with Streamlit or Flask
